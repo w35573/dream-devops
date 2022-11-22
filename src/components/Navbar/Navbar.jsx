@@ -84,7 +84,7 @@ function Navbar() {
           <div>
             {!isAuthenticated ? (
               <Button color="inherit" onClick={fetchToken}>
-                Login &nbsp; <AccountCircle />
+                LOGIN &nbsp; <AccountCircle />
               </Button>
             ) : (
               <Button
