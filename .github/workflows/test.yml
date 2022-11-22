@@ -26,6 +26,8 @@ jobs:
       # Build the app using cypress
       - name: Cypress run
         uses: cypress-io/github-action@v1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         with:
           build: npm run build
           start: npm start
